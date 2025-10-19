@@ -447,20 +447,6 @@
       <pos x="940" y="660"/>
     </visualElement>
     <visualElement>
-      <elementName>BitExtender</elementName>
-      <elementAttributes>
-        <entry>
-          <string>inputBits</string>
-          <int>1</int>
-        </entry>
-        <entry>
-          <string>outputBits</string>
-          <int>32</int>
-        </entry>
-      </elementAttributes>
-      <pos x="1060" y="680"/>
-    </visualElement>
-    <visualElement>
       <elementName>Multiplexer</elementName>
       <elementAttributes>
         <entry>
@@ -502,6 +488,34 @@
       </elementAttributes>
       <pos x="1860" y="700"/>
     </visualElement>
+    <visualElement>
+      <elementName>Splitter</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Input Splitting</string>
+          <string>0-0, 1-31</string>
+        </entry>
+        <entry>
+          <string>Output Splitting</string>
+          <string>32</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1100" y="680"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Const</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Value</string>
+          <long>0</long>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>31</int>
+        </entry>
+      </elementAttributes>
+      <pos x="1100" y="700"/>
+    </visualElement>
   </visualElements>
   <wires>
     <wire>
@@ -521,16 +535,16 @@
       <p2 x="1380" y="740"/>
     </wire>
     <wire>
-      <p1 x="1040" y="680"/>
-      <p2 x="1060" y="680"/>
+      <p1 x="1760" y="680"/>
+      <p2 x="1860" y="680"/>
     </wire>
     <wire>
       <p1 x="1120" y="680"/>
       <p2 x="1180" y="680"/>
     </wire>
     <wire>
-      <p1 x="1760" y="680"/>
-      <p2 x="1860" y="680"/>
+      <p1 x="1040" y="680"/>
+      <p2 x="1100" y="680"/>
     </wire>
     <wire>
       <p1 x="480" y="840"/>
