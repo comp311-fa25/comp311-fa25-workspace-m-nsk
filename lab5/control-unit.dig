@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <circuit>
   <version>2</version>
-  <attributes/>
+  <attributes>
+    <entry>
+      <string>romContent</string>
+      <romList>
+        <roms/>
+      </romList>
+    </entry>
+    <entry>
+      <string>Width</string>
+      <int>8</int>
+    </entry>
+  </attributes>
   <visualElements>
     <visualElement>
       <elementName>ROM</elementName>
@@ -1354,8 +1365,15 @@
         <entry>
           <string>Testdata</string>
           <testData>
-            <dataString>opcode   funct3  funct7    RegWrite ALUSrc ImmSrc ALUOp
-0b0110011 0b000  0b0000000 0b1      0b0    0b00   0b0010</dataString>
+            <dataString>opcode      funct3    funct7      RegWrite ALUSrc ImmSrc  ALUOp
+0b0110011   0b000     0b0000000   0b1      0b0    0b00    0b0010
+0b0110011   0b000     0b0100000   0b1      0b0    0b00    0b0110
+0b0110011   0b111     0b0000000   0b1      0b0    0b00    0b0000
+0b0110011   0b110     0b0000000   0b1      0b0    0b00    0b0001
+0b0110011   0b010     0b0000000   0b1      0b0    0b00    0b0111
+0b0010011   0b000     0b0000000   0b1      0b1    0b00    0b0010
+0b0010011   0b010     0b0000000   0b1      0b1    0b00    0b0111
+0b0010011   0b111     0b0000000   0b1      0b1    0b00    0b0000</dataString>
           </testData>
         </entry>
       </elementAttributes>
